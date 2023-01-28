@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std ;
+
+
+void pt(){
+    cout << " AGEN ROKO SAMPOERNA MILD " << endl ;
+    cout << " ========== PEMESANAN ROKO ========== " << endl;
+    cout << " Pilihan : " << endl ;
+    cout << " 1.Bungkus " << endl ;
+    cout << " 2.Selop " << endl ;
+    cout << " 3.Bal " << endl ;
+    cout << " 4.Karton " << endl ;
+
+}
+void bungkus (){
+    int bungkus = 30000 ;
+    int jumlahbungkus, totalharga ;
+    cout << " masukan jumlah yang ingin dipesan : " ;cin >> jumlahbungkus ;
+            totalharga=(jumlahbungkus*bungkus) ;
+            cout << " Total yang harus dibayar : " << totalharga ;
+
+}
+
+void selop(){
+    int selop =300000;
+    int jumlahselop,totalharga1;
+            cout << " masukan jumlah yang ingin dipesan : " ;cin >> jumlahselop ;
+            totalharga1=(jumlahselop*selop) ;
+            cout << " Total yang harus dibayar : " << totalharga1 ;
+}
+
+void bal (){
+    int bal=3000000 ;
+    int jumlahbal,totalharga2 ;
+            cout << " masukan jumlah yang ingin dipesan : " ;cin >> jumlahbal ;
+            totalharga2=(jumlahbal*bal) ;
+            cout << " Total yang harus dibayar : " << totalharga2 ;
+        }
+void karton (){
+    int karton=30000000 ;
+    int jumlahkarton, totalharga3;
+            cout << " masukan jumlah yang ingin dipesan : " ;cin >> jumlahkarton ;
+            totalharga3=(jumlahkarton*karton) ;
+            cout << " Total yang harus dibayar : " << totalharga3 ;
+        }
+
+
+
+
+
+
+int main (){
+    int pilih,jenis;
+    pt() ;
+    cout << " Masukan pilihan : "; cin >> pilih ;
+
+    if (pilih==1){
+        bungkus() ;
+    }
+    else if(pilih==2){
+        selop () ;
+    }
+    else if (pilih==3){
+        bal() ;
+    }
+    else if(pilih==4){
+        karton();
+    }
+
+}
